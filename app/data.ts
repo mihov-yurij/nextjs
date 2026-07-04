@@ -1,17 +1,44 @@
 import { TeaProduct } from './types';
 
 export const FEATURED_TEAS: TeaProduct[] = [
-  // Зеленый чай
-  { id: '1', name: 'Маофэн из Хуаншани (Huangshan Maofeng)', category: 'Green Tea', price: 24.99, image: 'https://unsplash.com/photos/Green-Tea-in-China', isNew: true },
-  { id: '2', name: 'Билочуань из Сучжоу (Biluochun)', category: 'Green Tea', price: 29.99, image: 'https://unsplash.com/photos/Green-Tea-in-China', isNew: true },
-  { id: '3', name: 'Лунцзин (West Lake Longjing)', category: 'Green Tea', price: 35.50, image: 'https://unsplash.com/photos/Green-Tea-in-China', isNew: true },
-
-  // Улуны (Oolong)
-  { id: '4', name: 'Те Гуаньинь Премиум (Tieguanyin)', category: 'Oolong', price: 42.00, image: 'https://unsplash.com/photos/Oolong-Tea-in-China', isNew: true },
-  { id: '5', name: 'Да Хун Пао (Big Red Robe)', category: 'Oolong', price: 55.00, image: 'https://unsplash.com/photos/Oolong-Tea-in-China', isNew: true },
-  
-  // Пуэры (Puerh)
-  { id: '6', name: 'Мэнхай Шу Пуэр 2018 (Menghai Ripe Puerh)', category: 'Puerh', price: 38.99, image: 'https://unsplash.com/photos/Puerh-Tea-in-China' },
-  { id: '7', name: 'Шэн Пуэр со старых деревьев (Raw Puerh)', category: 'Puerh', price: 64.50, image: 'https://unsplash.com/photos/Puerh-Tea-in-China' }
+  { 
+    id: '1', 
+    slug: 'huangshan-maofeng-green-tea', 
+    name: 'Маофэн из Хуаншани (Huangshan Maofeng)', 
+    category: 'Green Tea', 
+    price: 24.99, 
+    // Изменили на массив картинок (главная + 2 дополнительные)
+    images: [
+      '/tea1.jpg',
+      '/tea2.jpg',
+      '/tea3.jpg'
+    ], 
+    isNew: true 
+  },
+  { 
+    id: '2', 
+    slug: 'biluochun-suzhou-green-tea', 
+    name: 'Билочуань из Сучжоу (Biluochun)', 
+    category: 'Green Tea', 
+    price: 29.99, 
+    images: [
+      '/tea2.jpg',
+      '/tea3.jpg'
+    ]
+  },
+  { 
+    id: '3', 
+    slug: 'west-lake-longjing-tea', 
+    name: 'Лунцзин (West Lake Longjing)', 
+    category: 'Green Tea', 
+    price: 35.50, 
+    images: [
+      '/tea3.jpg',
+      '/tea2.jpg'
+    ], 
+    isNew: true 
+  }
 ];
+
+
 

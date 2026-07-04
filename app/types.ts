@@ -3,6 +3,7 @@ export interface TeaProduct {
   name: string;
   category: string;
   price: number;
-  image: string;
+  images: string[];
+  slug: string;
   isNew?: boolean;
 }
